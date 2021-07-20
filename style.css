@@ -313,15 +313,18 @@ section .title::after{
     content: "what i know";
 }
 .skills .skills-content .column{
-    width: calc(50% - 30px);
+    position: relative;
+    text-align: center;
+    width: 600px;
+    left: 23.8%;
 }
 .skills .skills-content .left .text{
-    font-size: 20px;
+    font-size: 25px;
     font-weight: 600;
     margin-bottom: 10px;
 }
 .skills .skills-content .left p{
-    text-align: justify;
+    text-align: center;
 }
 .skills .skills-content .left a{
     display: inline-block;
