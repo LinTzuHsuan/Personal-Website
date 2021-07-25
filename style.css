@@ -317,20 +317,19 @@ section .title::after{
     content: "what i know";
 }
 .skills .skills-content .column{
-    max-width: 600px;
+    max-width: 500px;
     margin: auto;
-    padding: 0 80px;
 }
-.skills .skills-content .left .text{
+.skills .skills-content .skill .text{
     font-size: 25px;
     font-weight: 600;
     margin-bottom: 10px;
     text-align: center;
 }
-.skills .skills-content .left p{
+.skills .skills-content .skill p{
     text-align: center;
 }
-.skills .skills-content .left a{
+.skills .skills-content .skill a{
     display: inline-block;
     background: rgba(51, 85, 139);
     color: #fff;
@@ -342,52 +341,28 @@ section .title::after{
     border: 2px solid rgba(51, 85, 139);
     transition: all 0.3s ease;
 }
-.skills .skills-content .left a:hover{
-    color: rgba(51, 85, 139);
-    background: none;
+
+/* .skills .skills-content .ex .text{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    text-align: center;
 }
-.skills .skills-content .right .bars{
-    margin-bottom: 15px;
+.skills .skills-content .ex p{
+    text-align: center;
 }
-.skills .skills-content .right .info{
-    display: flex;
-    margin-bottom: 5px;
-    align-items: center;
-    justify-content: space-between;
-}
-.skills .skills-content .right span{
-    font-weight: 500;
-    font-size: 18px;
-}
-.skills .skills-content .right .line{
-    height: 5px;
-    width: 100%;
-    background: lightgrey;
-    position: relative;
-}
-.skills .skills-content .right .line::before{
-    content: "";
-    position: absolute;
-    height: 100%;
-    left: 0;
-    top: 0;
+.skills .skills-content .ex a{
+    display: inline-block;
     background: rgba(51, 85, 139);
-}
-.skills-content .right .cpp::before{
-    width: 90%;
-}
-.skills-content .right .py::before{
-    width: 90%;
-}
-.skills-content .right .m::before{
-    width: 70%;
-}
-.skills-content .right .java::before{
-    width: 60%;
-}
-.skills-content .right .git::before{
-    width: 50%;
-}
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 16px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid rgba(51, 85, 139);
+    transition: all 0.3s ease;
+} */
 
 /* projects section styling */
 .projects .title::after{
