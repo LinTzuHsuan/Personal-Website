@@ -317,15 +317,15 @@ section .title::after{
     content: "what i know";
 }
 .skills .skills-content .column{
-    position: relative;
-    text-align: center;
-    width: 600px;
-    left: 23.8%;
+    max-width: 600px;
+    margin: auto;
+    padding: 0 80px;
 }
 .skills .skills-content .left .text{
     font-size: 25px;
     font-weight: 600;
     margin-bottom: 10px;
+    text-align: center;
 }
 .skills .skills-content .left p{
     text-align: center;
@@ -457,10 +457,9 @@ section .title::after{
     content: "get in touch";
 }
 .contact .contact-content .column{
-    width: calc(105% - 30px);
-    align-items: center;
-    display: block;
-    margin-left: 43%;
+    max-width: 1300px;
+    margin: auto;
+    padding: 0 80px;
 }
 .contact .contact-content .text{
     font-size: 20px;
