@@ -376,6 +376,12 @@ section .title::after{
     overflow: hidden;
     transition: all 0.3s ease;
 }
+.projects .carousel .card a{
+    color: rgba(51, 85, 139);
+}
+.projects .carousel .card a:hover{
+    color: white;
+}
 .projects .carousel .card:hover{
     background: rgba(51, 85, 139);
 }
@@ -393,6 +399,10 @@ section .title::after{
     font-size: 25px;
     font-weight: 500;
     margin: 10px 0 7px 0;
+    color: white;
+}
+.projects .carousel .card p{
+    color: white;
 }
 .projects .carousel .card img{
     height: 150px;
