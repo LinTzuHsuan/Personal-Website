@@ -130,6 +130,7 @@
     <section class="projects" id="projects">
         <div class="max-width">
             <h2 class="title">My projects</h2>
+
             <div class="carousel owl-carousel">
                 <div class="card">
                     <a href="https://youtu.be/LFBe8aOxO7A" target="_blank">
@@ -150,13 +151,6 @@
                     </a>
                 </div>
                 <div class="card">
-                    <div class="box">
-                        <img src="images/profile-3.jpeg" alt="">
-                        <div class="text">Smart Chair Sensor</div>
-                        <p>Arduino, Firebase, and LSTM</p>
-                    </div>
-                </div>
-                <div class="card">
                     <a href="https://youtu.be/zRhbZGgOC4E" target="_blank">
                         <div class="box">
                             <img src="images/profile-4.jpeg" alt="">
@@ -165,29 +159,175 @@
                         </div>
                     </a>
                 </div>
-                <!-- <div class="card">
-                    <div class="box">
-                        <img src="images/profile-5.jpeg" alt="">
-                        <div class="text">Next One</div>
-                        <p>Get Ready???</p>
+            </div>
+            <br>
+            <div class="carousel owl-carousel">
+                <div class="card">
+                    <div class="box" id="chairBtn">
+                        <img src="images/profile-3.jpeg" alt="">
+                        <div class="text">Smart Chair Sensor</div>
+                        <p>Arduino, Firebase, and LSTM</p>
                     </div>
                 </div>
                 <div class="card">
-                    <div class="box">
-                        <img src="images/profile-5.jpeg" alt="">
-                        <div class="text">Next One</div>
-                        <p>Get Ready???</p>
+                    <div class="box" id="aiotBtn">
+                        <img src="images/aiotPage.png" alt="">
+                        <div class="text">AIot in Industry 4.0</div>
+                        <p>Web-based ML Modeling Assistant</p>
                     </div>
                 </div>
                 <div class="card">
-                    <div class="box">
-                        <img src="images/profile-5.jpeg" alt="">
-                        <div class="text">Next One</div>
-                        <p>Get Ready???</p>
+                    <div class="box" id="objectBtn">
+                        <img src="images/object.png" alt="">
+                        <div class="text">Object Detection</div>
+                        <p>Matlab</p>
                     </div>
-                </div> -->
+                </div>
             </div>
         </div>
+
+        <!-- The Modal -->
+        <div id="chairModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close" id="chairClose">&times;</span>
+                <p class="text-3">Smart Chair Sensor</p>
+                <p class="text">This is a B2B product. The motivation of this product was that customers in public places, such as cafés, food courts, train stations, and libraries, are unwilling to wait for seats. Under the circumstance, business may lose a lot of interests. If a sensor can be added to existing chairs, which can provide customers with instant seat usage rate and estimated waiting time, and even predict seat usage rate in the future, business can provide better services and earn more money.</p>
+                
+                <p class="text">In addition, these consumer behaviors can be provided to business, so that they can make more precise business strategies. For example, the café can provide products that make more profit but take more time to prepare. For example, the café can provide the light meal, when customers stay for a longer time. By contrast, the café can provide some sandwiches when consumers stay for a short time. Hence, with this censor and prediction model, it will be more convenient for customers and business can make more profit as well.</p>
+                
+                <img src="images/chair/smart chair sensor.pptx.png" alt=""><img src="images/chair/smart chair sensor.pptx-2.png" alt="">
+                <br>
+                <p class="text">This product consists of four part: Arduino, Firebase, web page, and AI.</p>
+                <br>
+                
+                <p class="text-1">Arduino</p>
+                <p class="text">The green dotted circle is the pressure sensor, which will trigger the signal when it receives force. The red solid circle is the Bluetooth transmitter. When it receives the signal from the pressure sensor, it will send the signal to the server written in Python through Bluetooth.</p>
+                <img src="images/chair/smart chair sensor.pptx-3.png" alt="">
+                <br>
+                <br>
+                <p class="text-1">Firebase</p>
+                <p class="text">When the server receives the signal from the Bluetooth sensor, the server will upload the data to Firebase and record it to provide predictive analysis input data.</p>
+                <br>
+                
+                <p class="text-1">Webpage</p>
+                <p class="text">Red dots represent occupied seats, and green dots represent vacancies. The webpage gets the information from the server written in Python.</p>
+                <img src="images/chair/smart chair sensor.pptx-4.png" alt="">
+                <br>
+                <br>
+                <p class="text-1">AI</p>
+                <p class="text">This project used LSTM model to predict the vacancies.</p>
+                <br>
+                <br>
+            </div>
+        </div>
+
+        <div id="aiotModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close" id="aiotClose">&times;</span>
+                <p class="text-3">AIoT in Industry 4.0</p>
+                <p class="text">This is an AI website designed for people who don't know programming well enough. This website helps people to train their own AI model with easy operation and helps them solve real-world problems. I am responsible for Autoencoder application.</p>
+                
+                <p class="text">In addition to the basic deep Autoencoder, I also implemented other three types of Autoencoder, including convolutional Autoencoder, Deoising Autoencoder, Variational Autoencoder.</p>
+                
+                <p class="text">There are four applications down below, which are dimensionality reduction, image denoising, feature extraction, and anomaly detection.</p>
+                
+                <br>
+                <p class="text-1">Dimensionality reduction</p>
+                
+                <p class="text">Implemented by deep Autoencoder or convolutional Autoencoder, users can choose the model by themselves. In addition, users can also determine the parameters, including encoded dimension, activation function, optimizer, loss function, batch size, and epochs. Moreover, in the convolutional Autoencoder, users can select filter, kernel size, and pool size of each layer. The following example uses MNIST handwritten digit to reduce the original 784-dimensional image into 30-dimensional representation through the encoder, and then restore by the decoder to 784-dimensional presentation.</p>
+                <br>                
+                <p class="text-2">1. deep Autoencoder</p>
+                
+                <p class="text">The below shows the training results, the first row is the original 784-dimensional data, the second row is the result after the encoder is reduced to 30 dimensions, and then returned to 784 dimensions by the decoder.</p>
+                <br>
+                <img src="images/aiot/1.png" alt="">
+                <br>
+                <br>
+                <p class="text-2">2. convolutional Autoencoder</p>
+            
+                <p class="text">The below shows the training results, the first row is the original 784-dimensional data, the second row is the result after the encoder is reduced to 30 dimensions, and then returned to 784 dimensions by the decoder.</p>
+                <br>
+                <img src="images/aiot/2.png" alt="">
+                <br>
+                <br>
+                <p class="text-1">Image Denoising</p>
+                
+                <p class="text">It is implemented by DAE (Denoising Autoencoder). The adjustable parameters are noise factor, encoded dimension, activation function, optimizer, loss function, batch size, and epochs. The following example uses MNIST handwritten digit with noise factor to restore a noisy picture into a clear picture.</p>
+                <br>
+                <img src="images/aiot/3.png" alt="">
+                <br>
+                <p class="text-1">Feature Extraction</p>
+                
+                <p class="text">It is implemented by deep Autoencoder. The adjustable parameters are epochs and training size. The following example uses VSB Power Line Fault Detection. Each line of this data contains 800,000 int8 values. The first six strokes are used as a feature extraction demonstration. This example executes deep Autoencoder twice for feature extraction, removing common features and leaving useful features.</p>
+                
+                <p class="text">The below shows the first six records, each of which has 800,000 values.</p>
+                
+                <img src="images/aiot/4.png" alt="">
+                <br>
+                <p class="text">The below shows the common features left by each piece of data after the first feature extraction, compared with the original data.</p>
+                
+                <img src="images/aiot/5.png" alt="">
+                <br>
+                <p class="text">The below shows the Residuals of each data without common data, compared with the original data.</p>
+                
+                <img src="images/aiot/6.png" alt="">
+                <br>
+                <p class="text">The below shows the common features left by each piece of data after the second feature extraction of the first Residuals, compared with the first Residuals.</p>
+            
+                <img src="images/aiot/7.png" alt="">
+                <br>
+                <p class="text">The below shows the second residuals of each data. The result is compared with the original data.</p>
+                
+                <img src="images/aiot/8.png" alt="">
+                <br>
+                <br>
+                <p class="text-1">Anomaly Detection</p>
+                
+                <p class="text">Implemented by Variational Autoencoder. Adjustable parameters are epochs, training size, batch size, and threshold. The following example uses Credit Card Fraud Detection. It is necessary to detect whether the transaction is fraud based on the amount of money and time.</p>
+                
+                <p class="text">The below shows the ROC curve (epoch is 50)</p>
+                
+                <img src="images/aiot/9.png" alt="">
+                <br>
+                <p class="text">The below shows users can select an appropriate threshold recommended by the ROC curve, and a confusion matrix can be obtained based on the threshold</p>
+                <br>
+                <img src="images/aiot/10.png" alt="">
+                <br>
+            </div>
+        </div>
+
+        <div id="objectModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close" id="objectClose">&times;</span>
+                <p class="text-3">Object Detection</p>
+                <p class="text">This is the program that utilize Matlab deep learning toolbox as image recognition. Labeling the objects, besides, the program is designed to position the items as well. The raw data is divided into two categories. One category contains only one object in the image while there are two objects for the other one. The program is completed in Matlab including GUI, Neural Network Training Program, Batch Process Program. The final accuracy is up to 85%.</p>
+                
+                <p class="text-1">Network Structure</p>
+                <img src="images/obj/obj1.png" alt="">
+                <br>
+                <p class="text-2">1. Create faster RCNN object detection network</p>
+                <p class="text">    (1) Load a pretrained ResNet-50</p>
+                <p class="text">    (2) Define new classification layers</p>
+                <p class="text">    (3) Create the box regression layers</p>
+                <p class="text">    (4) Add ROI max pooling layer</p>
+                <p class="text">    (5) Create the region proposal layer (set the anchor boxes parameter)</p>
+                <p class="text">    (6) Connect region proposal layer to ROI pooling</p>
+                <p class="text-2">2. Train faster RCNN</p>
+                <p class="text">    Use trainFasterRCNNObjectDetector</p>
+                <p class="text-2">3. Evaluate the accuracy</p>
+                <p class="text">    Accuracy: up to 85%</p>
+                <img src="images/object.png" alt="">
+                <br>
+                <br>
+            </div>
+        </div>
+
+
+
+
     </section>
 
     <!-- contact section start -->

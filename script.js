@@ -34,40 +34,85 @@ $(document).ready(function(){
     });
 
     // typing text animation script
-    var typed = new Typed(".typing", {
-        strings: ["Programmer", "CS Student @ USC", "Photographer"],
-        typeSpeed: 100,
-        backSpeed: 60,
-        loop: true
-    });
+    // var typed = new Typed(".typing", {
+    //     strings: ["Programmer", "CS Student @ USC", "Photographer"],
+    //     typeSpeed: 100,
+    //     backSpeed: 60,
+    //     loop: true
+    // });
 
-    var typed = new Typed(".typing-2", {
-        strings: ["Programmer", "CS Student @ USC", "Photographer"],
-        typeSpeed: 100,
-        backSpeed: 60,
-        loop: true
-    });
+    // var typed = new Typed(".typing-2", {
+    //     strings: ["Programmer", "CS Student @ USC", "Photographer"],
+    //     typeSpeed: 100,
+    //     backSpeed: 60,
+    //     loop: true
+    // });
 
     // owl carousel script
     $('.carousel').owlCarousel({
         margin: 20,
-        loop: true,
-        autoplay: true,
-        autoplayTimeOut: 2000,
-        autoplayHoverPause: true,
-        responsive: {
-            0:{
-                items: 1,
-                nav: false
-            },
-            600:{
-                items: 2,
-                nav: false
-            },
-            1000:{
-                items: 3,
-                nav: false
-            }
-        }
+        // loop: true,
+        // autoplay: true,
+        // autoplayTimeOut: 2000,
+        // autoplayHoverPause: true,
+        // responsive: {
+        //     0:{
+        //         items: 1,
+        //         nav: false
+        //     },
+        //     600:{
+        //         items: 2,
+        //         nav: false
+        //     },
+        //     1000:{
+        //         items: 3,
+        //         nav: false
+        //     }
+        // }
     });
+
+    // Get the modal
+    var chairModal = document.getElementById("chairModal");  
+    var chairBtn = document.getElementById("chairBtn");
+    var chairClose = document.getElementById("chairClose");
+    chairBtn.onclick = function() {
+        chairModal.style.display = "block";
+    }
+    chairClose.onclick = function() {
+        chairModal.style.display = "none";
+    }
+
+    
+    var aiotModal = document.getElementById("aiotModal");
+    var aiotBtn = document.getElementById("aiotBtn");
+    var aiotClose = document.getElementById("aiotClose");
+    aiotBtn.onclick = function() {
+        aiotModal.style.display = "block";
+    }
+    aiotClose.onclick = function() {
+        aiotModal.style.display = "none";
+    }
+
+
+    var objectModal = document.getElementById("objectModal");
+    var objectBtn = document.getElementById("objectBtn");
+    var objectClose = document.getElementById("objectClose");
+    objectBtn.onclick = function() {
+        objectModal.style.display = "block";
+    }
+    objectClose.onclick = function() {
+        objectModal.style.display = "none";
+    }
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+        if (event.target == chairModal) {
+            chairModal.style.display = "none";
+        }
+        if (event.target == aiotModal) {
+            aiotModal.style.display = "none";
+        }
+        if (event.target == objectModal) {
+            objectModal.style.display = "none";
+        }
+    }
 });
