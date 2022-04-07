@@ -282,7 +282,7 @@ section .title::after{
     background: #333;
     text-align: center;
     border-radius: 6px;
-    padding: 30px 25px;
+    padding: 30px 30px;
     cursor: pointer;
     transition: all 0.3s ease;
     margin: 20px auto;
@@ -317,11 +317,17 @@ section .title::after{
     content: "what i know";
 }
 .skills .skills-content .column{
-    max-width: 500px;
+    /* max-width: 500px; */
     margin: auto;
 }
 .skills .skills-content .skill .text{
     font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.skills .skills-content .skill .head{
+    font-size: 20px;
     font-weight: 600;
     margin-bottom: 10px;
     text-align: center;
