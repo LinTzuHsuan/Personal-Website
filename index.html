@@ -179,16 +179,22 @@
             <div class="carousel owl-carousel">
                 <div class="card">
                     <div class="box" id="chairBtn">
+                        <br>
+                        <br>
                         <img src="images/profile-3.jpeg" alt="">
                         <div class="text">Smart Chair Sensor</div>
                         <p>Arduino, Firebase, and LSTM</p>
+                        <br>
                     </div>
                 </div>
                 <div class="card">
                     <div class="box" id="aiotBtn">
+                        <br>
+                        <br>
                         <img src="images/aiotPage.png" alt="">
                         <div class="text">AIot in Industry 4.0</div>
                         <p>Web-based ML Modeling Assistant</p>
+                        <br>
                     </div>
                 </div>
                 <!-- <div class="card">
@@ -199,13 +205,27 @@
                     </div>
                 </div> -->
                 <div class="card">
-                    <a href="https://beautiful-python-520.wl.r.appspot.com/search" target="_blank">
+                    Enter password: <input id='password' type='text' style="border-radius: 6px; border: none; height: 18px; padding-left: 2%; margin-left: 2%;" />
+                    
+                    <a href="https://beautiful-python-520.wl.r.appspot.com/search" onclick="javascript:return validatePass()" target="_blank">
+                        <br>
+                        <br>
                         <div class="box">
                             <img src="images/object.png" alt="">
                             <div class="text">Yelp-like Web Service</div>
-                            <p>Python, Ajax, and Yelp API (ask for demo)</p>
+                            <p>Python, Ajax, and Yelp API<br>(ask for demo)</p>
                         </div>
                     </a>
+                    <script>
+                        function validatePass(){
+                            if(document.getElementById('password').value == '13243546'){
+                                return true;
+                            }else{
+                                alert('wrong password!!');
+                                return false;
+                            }
+                        }
+                        </script>
                 </div>
             </div>
         </div>
