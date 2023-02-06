@@ -275,7 +275,7 @@ section .title::after{
 .publications .title::after,
 .projects .title::after{
     background: #222;
-    content: "what i did";
+    content: "what researches have i completed";
 }
 .publications .serv-publications .card{
     width: calc(100% - 20px);
@@ -350,7 +350,7 @@ section .title::after{
 
 /* projects section styling */
 .projects .title::after{
-    content: "what i did";
+    content: "what projects have i done";
 }
 .projects .carousel .card{
     background: #333;
