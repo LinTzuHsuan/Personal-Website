@@ -220,7 +220,7 @@ section .title::after{
 
 /* about section styling */
 .about .title::after{
-    content: "who am i";
+    content: "who i am";
 }
 .about .about-content .left{
     width: 45%;
@@ -275,7 +275,7 @@ section .title::after{
 .publications .title::after,
 .projects .title::after{
     background: #222;
-    content: "what i did";
+    content: "RESEARCHES";
 }
 .publications .serv-publications .card{
     width: calc(100% - 20px);
@@ -350,7 +350,7 @@ section .title::after{
 
 /* projects section styling */
 .projects .title::after{
-    content: "what i did";
+    content: "what i've done";
 }
 .projects .carousel .card{
     background: #333;
